@@ -3,8 +3,8 @@ import java.util.*;
 
 class MyQueue {
     
-    Stack<Integer> s1;
-    Stack<Integer> s2;
+    Stack<Integer> s1; //input stack
+    Stack<Integer> s2; //output stack
     
     public MyQueue() {
         s1 = new Stack();
@@ -24,9 +24,11 @@ class MyQueue {
 
     // Get the front element.
     public int peek() {
-      while (!s1.isEmpty())
-        s2.push(s1.pop());
-      
+        if (s2.isEmpty()) {
+          while (!s1.isEmpty()){
+            s2.push(s1.pop());
+          }
+        }
       return s2.peek();
     }
 
