@@ -1,9 +1,10 @@
 import java.io.*;
 import java.util.*;
 
-In the rotated array, there must be one half of the array is still in sorted order. We need to make a judgement to decide which half is ordered, and if the target in that half. If not, check the other half.
-
-Time complexity = O(lgn) - Special thanks to flyinghx61
+/*
+   In the rotated array, there must be one half of the array is still in sorted order. We need to make a judgement to decide which half is ordered, and if the target in that half. If not, check the other half.
+   Time complexity = O(logn)
+*/
 
 public int search(int[] A, int target) {   
 	int start = 0, end = A.length - 1;
