@@ -1,11 +1,29 @@
 import java.io.*;
 import java.util.*;
 
-// bfs 
-class Solution {
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+ 
+//bfs
 
-	public List<List<Integer>> zigzagLevelOrder1(TreeNode root) {
-		List<List<Integer>> ret = new ArrayList<>();
+class Solution {
+	
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+		
+        List<List<Integer>> ret = new ArrayList<>();
 		Queue<TreeNode> queue = new LinkedList<>();
 		queue.add(root);
 		int l = 0;
@@ -29,5 +47,5 @@ class Solution {
 			l++;
 		}
 		return ret;
-	 }
+    }
 }
