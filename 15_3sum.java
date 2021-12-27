@@ -28,32 +28,24 @@ class Solution {
                     
                     List<Integer> list = Arrays.asList(nums[low], number, nums[high]);
                     
-                    result.add(list);
-                    
-                    low++;
-                    
+                    result.add(list);                    
+                    low++;                    
                     while (low < high && nums[low] == nums[low-1]) {
                         low++;
-                    }
-                    
-                    high--;
-                    
+                    }                    
+                    high--;                    
                     while (low < high && nums[high] == nums[high+1]) {
                         high--;
                     }
                     
-                } else if (total < 0) {
-                    
-                    low++;
-                    
-                } else {
-                    
+                } else if (total < 0) {                    
+                    low++;                    
+                } else {                  
                     high--;
                 }
             }
         }
         
-        return result;
-    
+        return result;    
     }
 }
