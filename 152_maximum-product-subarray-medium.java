@@ -8,7 +8,9 @@ Intution: Since we have to find the contiguous subarray having maximum product t
     Case2 :- Array have positive and negative elements both :
         If the number of negative elements is even then again your answer will be complete array because on multiplying all the negative numbers it will become positive.
         If the number of negative elements is odd then you have to remove just one negative element and for that u need to check your subarrays to get the max product.
-    Case3 :- Array also contains 0 : Then there will be not much difference...its just that your array will be divided into subarray around that 0. What u have to so is just as soon as your product becomes 0 make it 1 for the next iteration, now u will be searching new subarray and previous max will already be updated.
+    Case3 :- Array also contains 0 : Then there will be not much difference...its just that your array will be divided into subarray around that 0.
+    What u have to so is just as soon as your product becomes 0 make it 1 for the next iteration, now u will be searching new subarray and previous max
+    will already be updated.
     *(These cases are much clear in approach 3)
 
 ** As it is said "Talk is Cheap, Show me the Code", so based on above discussion we can frame our code in many different ways, out of which I have mentioned 3 intutive approaches.
