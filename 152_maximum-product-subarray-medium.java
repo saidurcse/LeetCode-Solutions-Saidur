@@ -45,22 +45,22 @@ why not as soon as we encounter negative element, we swap the max and min alread
 class Solution {
     public int maxProduct(int[] nums) {
         
-        int max = nums[0], min = nums[0], ans = nums[0];
-        int n = nums.length;
+        int max = nums[0], min = nums[0], ans = nums[0]; // 2, 2, ,2
+        int n = nums.length; // 4
         
-        for (int i = 1; i < n; i++) {
+        for (int i = 1; i < n; i++) { 
         
 	    // Swapping min and max
-            if (nums[i] < 0){
+            if (nums[i] < 0){ // nums[i] = 3
                 int temp = max;
                 max = min;
                 min = temp;
             }
                 
-            max = Math.max(nums[i], max * nums[i]);
-            min = Math.min(nums[i], min * nums[i]);
+            max = Math.max(nums[i], max * nums[i]); // 3, 6 -> 6
+            min = Math.min(nums[i], min * nums[i]); // 3,6 -> 3
 
-            ans = Math.max(ans, max);
+            ans = Math.max(ans, max); // 2, 6 -> 6
         }
         
         return ans;
@@ -99,24 +99,27 @@ class Solution {
 }
 */
 
-public int maxProduct(int[] nums) {
-	
-	int max = nums[0], min = nums[0], ans = nums[0];
-	int n = nums.length;
-
-	for (int i = 1; i < n; i++) {
-
+class Solution {
+    public int maxProduct(int[] nums) {
+        
+        int max = nums[0], min = nums[0], ans = nums[0]; // 2, 2, ,2
+        int n = nums.length; // 4
+        
+        for (int i = 1; i < n; i++) { 
+        
 	    // Swapping min and max
-	    if (nums[i] < 0){
-		int temp = max;
-		max = min;
-		min = temp;
-	    }
+            if (nums[i] < 0){ // nums[i] = 3
+                int temp = max;
+                max = min;
+                min = temp;
+            }
+                
+            max = Math.max(nums[i], max * nums[i]); // 3, 6 -> 6
+            min = Math.min(nums[i], min * nums[i]); // 3,6 -> 3
 
-	    max = Math.max(nums[i], max * nums[i]);
-	    min = Math.min(nums[i], min * nums[i]);
-	    ans = Math.max(ans, max);
-	}
-
-	return ans;
+            ans = Math.max(ans, max); // 2, 6 -> 6
+        }
+        
+        return ans;
+    }
 }
