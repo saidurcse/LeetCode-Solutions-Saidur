@@ -17,7 +17,9 @@ public int lengthOfLIS(int[] nums) {
     return top+1;
 }
 
-The worst time complexity is O(n^2). If we use binary search to determine the index of the inserted element, it could achieve O(nlogn). I think the tag of this problem is very confusing. The problem can be included as a DP problem but it doesn't make sense well, because the problem has only one sub-problem. When I saw the problem, the first thing I came up with was stack...
+The worst time complexity is O(n^2). If we use binary search to determine the index of the inserted element, it could achieve O(nlogn). I think the tag of this problem is very
+confusing. The problem can be included as a DP problem but it doesn't make sense well, because the problem has only one sub-problem. When I saw the problem, the first thing
+I came up with was stack...
 */
 
 /*
