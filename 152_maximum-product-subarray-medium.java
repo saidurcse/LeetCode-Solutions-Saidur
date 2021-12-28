@@ -33,7 +33,6 @@ class Solution {
         }
         
         return ans;
-
     }
 }
 
@@ -47,24 +46,20 @@ class Solution {
         
         for (int i = 1; i < n; i++) {
         
-			// Swapping min and max
+	    // Swapping min and max
             if (nums[i] < 0){
                 int temp = max;
                 max = min;
                 min = temp;
             }
                 
-
-
             max = Math.max(nums[i], max * nums[i]);
             min = Math.min(nums[i], min * nums[i]);
-
 
             ans = Math.max(ans, max);
         }
         
         return ans;
-
     }
 }
 
@@ -92,12 +87,10 @@ class Solution {
             l *= nums[i];   //prefix product
             r *= nums[n-1-i];    //suffix product
             
-            ans = Math.max(ans,Math.max(l,r));
-            
+            ans = Math.max(ans,Math.max(l,r));            
         }
         
         return ans;
-
     }
 }
 */
