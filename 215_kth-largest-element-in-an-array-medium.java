@@ -1,7 +1,8 @@
 import java.io.*;
 import java.util.*;
 
-/*Personally, the most straightforward way is to use quick select. There is a simple conversion: Find kith largest element is equivalent to find (n - k)th smallest element in array. It is worth mentioning that (n - k) is the real index (start from 0) of an element.
+/*Personally, the most straightforward way is to use quick select. There is a simple conversion: Find kith largest element is equivalent to find (n - k)th smallest element
+in array. It is worth mentioning that (n - k) is the real index (start from 0) of an element.
 
 public class Solution {
     public int findKthLargest(int[] nums, int k) {
