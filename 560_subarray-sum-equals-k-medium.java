@@ -125,7 +125,8 @@ public class Solution {
             sum += nums[i];
             if (map.containsKey(sum - k))
                 count += map.get(sum - k);
-            map.put(sum, map.getOrDefault(sum, 0) + 1);
+            map.put(sum, map.getOrDefault(sum, 0) + 1); // The getOrDefault(Object key, V defaultValue) method of Map interface, implemented by HashMap class is used to get
+                                                         //the value mapped with specified key. If no value is mapped with the provided key then the default value is returned.
         }
         return count;
     }
