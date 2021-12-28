@@ -13,7 +13,8 @@ Intution: Since we have to find the contiguous subarray having maximum product t
 
 ** As it is said "Talk is Cheap, Show me the Code", so based on above discussion we can frame our code in many different ways, out of which I have mentioned 3 intutive approaches.
 
-Approach 1: For each index i keep updating the max and min. We are also keeping min because on multiplying with any negative number your min will become max and max will become min. So for every index i we will take max of (i-th element, prevMax * i-th element, prevMin * i-th element).
+Approach 1: For each index i keep updating the max and min. We are also keeping min because on multiplying with any negative number your min will become max and max
+will become min. So for every index i we will take max of (i-th element, prevMax * i-th element, prevMin * i-th element).
 
 class Solution {
     public int maxProduct(int[] nums) {
