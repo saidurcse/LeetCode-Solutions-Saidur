@@ -37,7 +37,8 @@ class Solution {
     }
 }
 
-Approach 2: Just the slight modification of previous approach. As we know that on multiplying with negative number max will become min and min will become max, so why not as soon as we encounter negative element, we swap the max and min already.
+Approach 2: Just the slight modification of previous approach. As we know that on multiplying with negative number max will become min and min will become max, so
+why not as soon as we encounter negative element, we swap the max and min already.
 
 class Solution {
     public int maxProduct(int[] nums) {
