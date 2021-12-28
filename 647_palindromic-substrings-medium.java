@@ -3,7 +3,8 @@ import java.util.*;
 
 /*
 Idea:
-dp[i][j] is true if s[i..j] is a palindrome. So if we know dp[i+1][j-1] to be true that is s[i+1..j-1] is a palindrome and we know s[i] == s[j], then we can extend it by adding s[i] at the front and s[j] at the back.
+dp[i][j] is true if s[i..j] is a palindrome. So if we know dp[i+1][j-1] to be true that is s[i+1..j-1] is a palindrome and we know s[i] == s[j],
+then we can extend it by adding s[i] at the front and s[j] at the back.
 Maintain max such string seen so far. Also, current cell depends on next row, prev col, we need to scan from bottom-up and right-left.
 */
 
