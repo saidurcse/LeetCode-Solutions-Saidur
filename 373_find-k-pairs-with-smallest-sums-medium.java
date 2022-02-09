@@ -50,7 +50,7 @@ class Solution {
 
     while (ans.size() < k && pq.size() > 0) {
         int[] small = pq.poll();
-        ans.add(List.of(nums1[curr[0]], nums2[curr[1]]));
+        ans.add(List.of(nums1[small[0]], nums2[small[1]]));
         nums1Ptrs[small[0]]++;
         if(nums1Ptrs[small[0]] < nums2.length) {
             pq.offer(new int[]{small[0], nums1Ptrs[small[0]]});
