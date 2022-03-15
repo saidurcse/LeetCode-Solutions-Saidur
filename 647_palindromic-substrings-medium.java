@@ -23,62 +23,6 @@ public int countSubstrings(String s) {
 	return count;
 }
 
-
-/*
-EXPLANATION AND IDEA:
-BRUTEFORCE:
-let say str: "aba" . check for every Possible subarray(o(n^2)) is it palindromic? if yes increase count by 1.
-
-a              
-ab        b 
-aba      ba    a
-
-Write a Palindromic function that will check either string is palindromic or not. and pass every substring to it. (O(n))
-Time:O(n^3) [n^2*n]
-Space:O(1)
-But we can improve the timeComplexity .
-
-OPTIMISED APPROCH:
-eg s: abccba
-Idea if we have checked for bccb earlier then we just have to check that is character before first b equal to character after last b.
-means if dp[st+1][end-1]==true && s.charAt(st)==s.charAt(end) then its a palindromic substring.
-
-if length of string is 1 then its a palindromic .
-if length of string is 2 . just check if they are same then its palindromic.
-
-CODE:
-
-    public int countSubstrings(String s) {
-        int count=0;
-        boolean[][] dp=new boolean[s.length()][s.length()];
-        
-        for(int diag=0;diag<s.length();diag++){
-            int st=0;
-            int end=diag;
-            while(end<s.length()){
-                if(diag==0){
-                    dp[st][end]=true;
-                }else if(diag==1){
-                    dp[st][end]=s.charAt(st)==s.charAt(end);
-                }else{
-                   if(s.charAt(st)==s.charAt(end) && dp[st+1][end-1]){
-                       dp[st][end]=true;
-                   }
-                }
-                
-                if(dp[st][end]) count++;
-                st++;
-                end++;
-            }
-        }
-        return count;
-    }
-
-COMPLEXITY
-Time: O(n^2) Space: O(n^2)
-Please UPVOTE if found it helpful and feel free to reach out me or comment down if you have any doubt.
-*/
-
 /**
  * Optimized Solution for continuous repeating characters.
  * Find the center and expand palindrome around the center.
