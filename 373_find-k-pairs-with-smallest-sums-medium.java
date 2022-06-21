@@ -1,6 +1,7 @@
 import java.io.*;
 import java.util.*;
 
+/*Best Solution*/
 class Solution {
 	private static int[][] DIRECTIONS = new int[][] {{1,0}, {0,1}};
     
