@@ -8,6 +8,7 @@ then we can extend it by adding s[i] at the front and s[j] at the back.
 Maintain max such string seen so far. Also, current cell depends on next row, prev col, we need to scan from bottom-up and right-left.
 */
 
+/*Best Solution*/
 public int countSubstrings(String s) {
 	int count = 0, n = s.length();
 	boolean[][] dp = new boolean[n][n];
