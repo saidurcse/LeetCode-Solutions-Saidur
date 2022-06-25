@@ -50,8 +50,8 @@ Thinkings
                 }
             }
 */
-Code
 
+/*Best Solution*/
 public class Solution {
     public int subarraySum(int[] nums, int k) {
         int count = 0;
@@ -113,9 +113,7 @@ Thinkings
 
         Attention : In the previous method, we set the first element of sum to 0. Similarly, we put it in the hashmap, which is (0, 1).
 */
-Code
 
-/*Best Solution*/
 public class Solution {
     public int subarraySum(int[] nums, int k) {
         int count = 0, sum = 0;
