@@ -5,6 +5,7 @@ import java.util.*;
 This is a classic sliding window problem. Expand on the right at each iteration and shrink the left side until we are not fufilling our criteria - sum < k.
 */
 
+/*Best Solution*/
 class Solution {
     public int minSubArrayLen(int target, int[] nums) {
         
