@@ -37,7 +37,7 @@ class Solution {
         	boolean[] visited = new boolean[256];
         	
         	for(int j=i; j<s.length(); j++) {
-        		// If current character is visited Break the loop
+        	// If current character is visited Break the loop
                 if (visited[s.charAt(j)] == true)
                     break;
                 
@@ -48,7 +48,7 @@ class Solution {
                 	max = Math.max(max, j-i+1);
                 	visited[s.charAt(j)] = true;
                 }
-        	}
+            }
         	// Remove the first character of previous window
         	visited[s.charAt(i)] = false;
         }
