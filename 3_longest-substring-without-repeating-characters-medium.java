@@ -23,6 +23,7 @@ public int lengthOfLongestSubstring(String s) {
 }
 */
 
+/*Best Solution*/
 class Solution {
     public int lengthOfLongestSubstring(String s) {
         if(s.length() == 0)
