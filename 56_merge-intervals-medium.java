@@ -5,6 +5,7 @@ import java.util.*;
 
 /* Help Post: https://www.geeksforgeeks.org/merging-intervals/ */
 
+/*Best Solution*/
 class Solution{
 	public int[][] merge(int[][] intervals) {
 		if (intervals.length <= 1)
