@@ -34,9 +34,10 @@ public class Solution {
 			res -= 2*min;
          
          System.out.println(res);
-		 */
-		 
-		// Create a priority queue and insert all array elements in the priority queue      TC: O(n)
+	*/
+	
+	/* Best Solution */ 
+	// Create a priority queue and insert all array elements in the priority queue      TC: O(n)
         PriorityQueue<Integer> pq = new PriorityQueue<>();
         
         for(int num : nums)
