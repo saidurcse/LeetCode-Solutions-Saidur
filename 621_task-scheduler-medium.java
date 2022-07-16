@@ -1,12 +1,14 @@
 import java.io.*;
 import java.util.*;
 
+/*Best Solution*/
 class Solution {
     public int leastInterval(char[] tasks, int n) {
         // count char freq, task name doesn't matter, only freq matters
         int[] freq = new int[26];
         for (char c: tasks) freq[c - 'A']++;
         // sort first, so we have max freq at freq[25]
+        // freq[0] = 3, freq[1] = 3
         Arrays.sort(freq);
         int time = 0;
         while (freq[25] > 0) { // while we still have task to do, start from most freq task
