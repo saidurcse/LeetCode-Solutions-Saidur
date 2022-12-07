@@ -14,9 +14,9 @@ public class Solution {
      * Memory Complexity - Constant, O(1).
      *
      * This can be solved by Kadane's algorithm:
-     * The idea of Kadane’s algorithm is to maintain a variable max_ending_here that stores the maximum sum contiguous subarray ending at current index and
-     * a variable max_so_far stores the maximum sum of contiguous subarray found so far, Everytime there is a positive-sum value in max_ending_here compare
-     * it with max_so_far and update max_so_far if it is greater than max_so_far.
+     * The idea of Kadane’s algorithm is to maintain a variable "max_ending_here" that stores the maximum sum contiguous subarray ending at current index and
+     * a variable "max_so_far" stores the maximum sum of contiguous subarray found so far, Everytime there is a positive-sum value in "max_ending_here" compare
+     * it with max_so_far and update "max_so_far" if it is greater than "max_so_far".
 	Initialize:
         max_so_far = INT_MIN
         max_ending_here = 0
