@@ -12,6 +12,14 @@ import java.util.*;
  *     }
  * }
  */
+
+/*
+This approach is simply brilliant. Love it.
+
+For those of you who can not comprehend what is going on. Basically, the slow variable moves only one time each loop,
+while fast variable moves two times. Eventually fast variable will catch up the slow one if the Linked List has a cycle in it.
+*/
+
 public class Solution {
     public boolean hasCycle(ListNode head) {
         
