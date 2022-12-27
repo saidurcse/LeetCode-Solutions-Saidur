@@ -49,6 +49,7 @@ class Solution {
 
         /* Compare the data of the two lists whichever lists' data is smaller,
 	append it into tail and advance the head to the next Node */
+       // till one of the list doesn't reaches NULL
         while (head1 != null && head2 != null) {
             ListNode temp = null;
             if (head1.val <= head2.val) {
@@ -64,6 +65,7 @@ class Solution {
             mergedTail = temp;
         }
 
+        // adding remaining elements of bigger list.
         if (head1 != null) {
             mergedTail.next = head1;
         } else if (head2 != null) {
