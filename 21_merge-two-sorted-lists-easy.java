@@ -49,7 +49,7 @@ class Solution {
 
         /* Compare the data of the two lists whichever lists' data is smaller,
 	append it into tail and advance the head to the next Node */
-       // till one of the list doesn't reaches NULL
+        // Use Merge sort logic to merge nodes value
         while (head1 != null && head2 != null) {
             ListNode temp = null;
             if (head1.val <= head2.val) {
