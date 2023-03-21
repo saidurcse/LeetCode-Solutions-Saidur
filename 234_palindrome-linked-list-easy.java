@@ -13,7 +13,7 @@ import java.util.*;
  */
 class Solution {
     public boolean isPalindrome(ListNode head) {
-        /*//ArrayList Code
+        //ArrayList Code
         ArrayList<Integer> list = new ArrayList<>();
 
         ListNode temp= head;
@@ -28,7 +28,7 @@ class Solution {
         }
 
         return true;
-        */
+        /*
         //Reverse list method
         if(head == null || head.next == null) return true;
         ListNode slow = head, fast = head;
@@ -69,4 +69,5 @@ class Solution {
         }
         return prev;
     }
+    */
 }
