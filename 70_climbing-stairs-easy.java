@@ -55,7 +55,7 @@ class Solution
     }
 }
 
-Bottom-Up Approach
+/*Bottom-Up Approach
 
 class Solution
 {
@@ -75,6 +75,7 @@ class Solution
         return dp[n];
     }
 }
+*/
 
 Solution 3: Fibonacci Number
 
@@ -96,8 +97,8 @@ class Solution
         int a = 1;
         int b = 2;
 
-		for(int i = 3; i <= n; i++)
-		{
+	for(int i = 3; i <= n; i++)
+	{
             int sum = a + b;
             a = b;
             b = sum;
