@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Solution {
+/*public class Solution {
     public boolean isPalindrome(String s) {
         if (s.isEmpty()) {
         	return true;
@@ -26,9 +26,9 @@ public class Solution {
         
         return true;
     }
-}
+}*/
 
-/*
+
 public class Solution {
     public boolean isPalindrome(String s) {
         String actual = s.replaceAll("[^A-Za-z0-9]", "").toLowerCase();
@@ -36,4 +36,3 @@ public class Solution {
         return actual.equals(rev);
     }
 }
-*/
