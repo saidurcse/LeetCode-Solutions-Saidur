@@ -17,7 +17,7 @@ import java.util.*;
  * }
  */
  
- /* Recursive solution
+ //Recursive solution
 
 	if (root == null) {
 		return 0;
@@ -29,8 +29,8 @@ import java.util.*;
 	} else if (root.val >= L && root.val <= R) {
 		return root.val + rangeSumBST(root.left, L, R) + rangeSumBST(root.right, L, R);
 	}  
- */
  
+ /*
 class Solution {
     public int rangeSumBST(TreeNode root, int low, int high) {
         
@@ -56,3 +56,4 @@ class Solution {
         return sum;
     }
 }
+*/
