@@ -12,8 +12,8 @@ public int missingNumber(int[] nums) {
     return nums.length - sum;
 }
 
+/*
 /*Binary Search*/
-
 public int missingNumber(int[] nums) { //binary search
     Arrays.sort(nums);
     int left = 0, right = nums.length, mid= (left + right)/2;
@@ -24,3 +24,4 @@ public int missingNumber(int[] nums) { //binary search
     }
     return left;
 }
+*/
