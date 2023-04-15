@@ -65,7 +65,7 @@ public class Solution {
 	            return null;
 	        }
 	        
-	        int mid = left + (right - left) / 2; // Pick the middle element as root
+	        int mid = left + (right - left) / 2; // Pick the middle element as root // int mid = (left + right) / 2;
 	        
 	        TreeNode root = new TreeNode(nums[mid]);
 	        root.left = helper(nums, left, mid - 1); // Check if any elements remaining on the left side // add left subtree
