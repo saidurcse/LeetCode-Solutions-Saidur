@@ -15,6 +15,10 @@ for (int i = 0; i < nums.length; i++) {
 return result;
 */
 
+// First calling one arrary for storing result
+// Two loops for traversing the numbers
+// Checking with target, if found return the resutl
+
 /*Best Solution*/
 class Solution {
     public int[] twoSum(int[] nums, int target) {
