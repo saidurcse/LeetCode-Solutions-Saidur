@@ -1,6 +1,10 @@
 import java.io.*;
 import java.util.*;
 
+// First need to find min_price whcih is the buying cost
+// Subtract the min_price with every element of the price
+// Compare the two cost maxCost and cost so that we can get the profit on the same day
+
 class Solution {
     public int maxProfit(int[] prices) {
         int n = prices.length;
