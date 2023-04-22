@@ -39,7 +39,7 @@ class Solution {
     }
 }
 
-/*
+/* Kotlin */
 class Solution {
     fun twoSum(nums: IntArray, target: Int): IntArray {
         val result = IntArray(2)
@@ -56,4 +56,3 @@ class Solution {
         return result
     }
 }
-*/
