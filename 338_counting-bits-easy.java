@@ -1,6 +1,9 @@
 import java.io.*;
 import java.util.*;
 
+// Using one array loop
+// Using bitwise operator counting the bits
+
 class Solution {
     public int[] countBits(int n) {
         int[] f = new int[n+1];
