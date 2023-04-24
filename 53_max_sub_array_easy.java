@@ -35,8 +35,8 @@ public class Solution {
     public static int maxSubArray(int[] nums) {
     	
     	int size = nums.length;
-        int max_so_far = Integer.MIN_VALUE; 
-        int max_ending_here = 0;
+	int max_ending_here = 0;
+        int max_so_far = Integer.MIN_VALUE;
  
         for (int i = 0; i < size; i++)
         {
