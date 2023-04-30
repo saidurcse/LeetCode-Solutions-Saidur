@@ -20,6 +20,7 @@ return result;
 // Checking with target, if found return the resutl
 
 /*Best Solution*/
+/*
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         
@@ -37,7 +38,7 @@ class Solution {
        
         return result;
     }
-}
+}*/
 
 /* Kotlin */
 class Solution {
@@ -46,7 +47,7 @@ class Solution {
 
         for(i in 0 until nums.size - 1) {
             for(j in i+1 until nums.size) {
-                if(nums.get(i) + nums.get(j) == target) {
+                if(nums.get(i) + nums.get(j) == target) { // if(nums[i]+nums[j] == target)
                     result[0] = i
                     result[1] = j
                 }
