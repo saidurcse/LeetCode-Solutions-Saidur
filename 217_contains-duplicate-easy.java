@@ -60,7 +60,6 @@ class Solution {
             if (hset.contains(nums[i])) {
                 return true
             }
-
             hset.add(nums[i])
         }
 
