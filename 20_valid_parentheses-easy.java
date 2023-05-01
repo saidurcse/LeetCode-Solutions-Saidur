@@ -65,9 +65,7 @@ class Solution {
         val stack = Stack<Char>()
         for (ch in s.toCharArray()) {
             when (ch) {
-
                 '(', '{', '[' -> stack.push(ch)
-
                 ')' -> if (stack.isEmpty() || stack.pop() != '(') {
                     return false
                 }
