@@ -19,7 +19,6 @@ class Solution {
         for(i in 0 until nums2.size) {
             nums1[m+i] = nums2[i]
         }
-
         nums1.sort()
 
     }
