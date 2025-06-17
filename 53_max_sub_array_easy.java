@@ -31,12 +31,13 @@ public class Solution {
 	return max_so_far
 	Exaplanation: https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/ (No need)
      * */
-	
+
+    /*	
     public static int maxSubArray(int[] nums) {
     	
     	int size = nums.length;
-        int max_so_far = Integer.MIN_VALUE; 
-        int max_ending_here = 0;
+	int max_ending_here = 0;
+        int max_so_far = Integer.MIN_VALUE;
  
         for (int i = 0; i < size; i++)
         {
@@ -53,6 +54,25 @@ public class Solution {
     public static void main(String[] args) {
         int[] arr = {-4, 2,-5,1,2,3,6,-5,1};
         System.out.println(maxSubArray(arr));
+    }
+}*/
+
+/*Kotlin*/
+class Solution {
+    fun maxSubArray(nums: IntArray): Int {
+        var max_ending_here = 0
+        var max_so_far = 0
+
+        for(i in 0 until nums.size) {
+            max_ending_here = max_ending_here + nums[i]
+            if(max_so_far < max_ending_here)
+                max_so_far = max_ending_here
+
+            if(max_ending_here < 0)
+                max_ending_here = 0
+        }
+
+        return max_so_far
     }
 }
 

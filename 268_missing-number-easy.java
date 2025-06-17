@@ -5,16 +5,29 @@ import java.util.*;
 so the difference of each number between its corresponding index is [0,0,1,1], add up the differences, subtract it from
 the length of the array, we can get the missing number from which the difference occurs. Please leave any comments for discussing the solution.*/
 
+/*
 public int missingNumber(int[] nums) {
     int sum = 0;
     for (int i = 0; i < nums.length; i++)
         sum += nums[i] - i;
     return nums.length - sum;
+}*/
+
+/*Kotlin*/
+class Solution {
+    fun missingNumber(nums: IntArray): Int {
+        
+        var sum = 0
+        for(i in 0 until nums.size) {
+            sum += nums[i]-i 
+        }
+
+        return nums.size-sum
+    }
 }
 
 /*Binary Search*/
-
-public int missingNumber(int[] nums) { //binary search
+/*public int missingNumber(int[] nums) { //binary search
     Arrays.sort(nums);
     int left = 0, right = nums.length, mid= (left + right)/2;
     while(left<right){
@@ -24,3 +37,4 @@ public int missingNumber(int[] nums) { //binary search
     }
     return left;
 }
+*/

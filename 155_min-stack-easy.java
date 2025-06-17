@@ -20,9 +20,7 @@ class MinStack {
         public Node(int val,int min){
             this.val = val;
             this.min = min;
-             
-        }
-         
+        } 
     }
  
     /** initialize your data structure here. */

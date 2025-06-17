@@ -20,6 +20,7 @@ import java.util.*;
 
 3, Move them together until finding the intersection point, or the end null
 */
+/*
 public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
     int lenA = length(headA), lenB = length(headB);
     // move headA and headB to the same start point
@@ -47,13 +48,13 @@ private int length(ListNode node) {
     }
     return length;
 }
-
+*/
 
 /*
 I found most solutions here preprocess linkedlists to get the difference in len.
 Actually we don't care about the "value" of difference, we just want to make sure two pointers reach the intersection node at the same time.
 */
-/*
+
 public class Solution {
     
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
@@ -81,5 +82,5 @@ public class Solution {
         return p1;
     }
 }
-*/
+
 

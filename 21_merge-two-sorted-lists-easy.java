@@ -12,7 +12,7 @@ import java.util.*;
  * }
  */
 
-/*  //Using recursion
+    //Using recursion
     public ListNode mergeTwoLists(ListNode l1, ListNode l2){
 	if(l1 == null) return l2;
 	if(l2 == null) return l1;
@@ -24,8 +24,8 @@ import java.util.*;
 		return l2;
 	}
    }
-*/
 
+/*
 class Solution {
     public ListNode mergeTwoLists(ListNode head1, ListNode head2) {
         // if both lists are empty then merged list is also empty
@@ -74,3 +74,4 @@ class Solution {
         return mergedHead;
     }
 }
+*/

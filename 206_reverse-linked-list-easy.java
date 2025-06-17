@@ -12,7 +12,7 @@ public class Solution {
 	      }
 	  }
     
-	public ListNode deleteDuplicates(ListNode head) {
+	public ListNode reverseList(ListNode head) {
 		ListNode previous = null;
         ListNode current = head;
         ListNode next = null;

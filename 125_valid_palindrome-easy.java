@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Solution {
+/*public class Solution {
     public boolean isPalindrome(String s) {
         if (s.isEmpty()) {
         	return true;
@@ -26,7 +26,7 @@ public class Solution {
         
         return true;
     }
-}
+}*/
 
 /*
 public class Solution {
@@ -35,5 +35,12 @@ public class Solution {
         String rev = new StringBuffer(actual).reverse().toString();
         return actual.equals(rev);
     }
+}*/
+
+/*Kotlin*/
+class Solution {
+    fun isPalindrome(s: String): Boolean {
+        val filteredS = s.toLowerCase().filter { it.isLetter() || it.isDigit() }
+        return filteredS == filteredS.reversed()
+    }
 }
-*/

@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.*;
 
 // If two strings are anagrams then the frequency of every char in both of the strings are same.
+/*
 class Solution {
     public boolean isAnagram(String s, String t) {
         // Base case: if the two strings are empty...
@@ -24,5 +25,28 @@ class Solution {
                 return false;
         }
         return true;
+    }
+}*/
+
+/*Kotlin*/
+class Solution {
+    fun isAnagram(s: String, t: String): Boolean {
+        
+        val counter = IntArray(26)
+
+        if(s.length != t.length)
+            return false
+
+        for(i in 0 until s.length) {
+            counter[s.get(i)-'a']++
+            counter[t.get(i)-'a']--
+        }
+
+        for(i in counter) {
+            if(i != 0)
+                return false
+        }
+
+        return true
     }
 }

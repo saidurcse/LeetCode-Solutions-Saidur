@@ -17,20 +17,14 @@ import java.util.*;
  * }
  */
  
- /* Recursive solution
+ //Recursive solution
 
-	if (root == null) {
-		return 0;
-	}
-	if (root.val < L) {
-		return rangeSumBST(root.right, L, R);
-	} else {
-		return rangeSumBST(root.left, L, R);
-	} else if (root.val >= L && root.val <= R) {
-		return root.val + rangeSumBST(root.left, L, R) + rangeSumBST(root.right, L, R);
-	}  
- */
+	if (root == null) return 0; // base case.
+        if (root.val < low) return rangeSumBST(root.right, low, high); // left branch excluded.
+        if (root.val > high) return rangeSumBST(root.left, low, high); // right branch excluded.
+        return root.val + rangeSumBST(root.right, low, high) + rangeSumBST(root.left, low, high); // count in both children.  
  
+ /*
 class Solution {
     public int rangeSumBST(TreeNode root, int low, int high) {
         
@@ -56,3 +50,4 @@ class Solution {
         return sum;
     }
 }
+*/

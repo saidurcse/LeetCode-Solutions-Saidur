@@ -1,6 +1,11 @@
 import java.io.*;
 import java.util.*;
 
+// First need to find min_price whcih is the buying cost
+// Subtract the min_price with every element of the price
+// Compare the two cost maxCost and cost so that we can get the profit on the same day
+
+/*
 class Solution {
     public int maxProfit(int[] prices) {
         int n = prices.length;
@@ -31,5 +36,25 @@ class Solution {
             maxCost = Math.max(maxCost, cost);
         }
         return maxCost;
+    }
+}*/
+
+/*Kotlin*/
+class Solution {
+    fun maxProfit(prices: IntArray): Int {
+        var minCost = 0
+        var maxCost = 0
+
+        var min_price = prices[0]
+
+        for(i in 0 until prices.size) {
+            min_price = Math.min(min_price, prices[i])
+
+            minCost = prices[i] - min_price;
+
+            maxCost = Math.max(maxCost, minCost)
+        }
+
+        return maxCost
     }
 }

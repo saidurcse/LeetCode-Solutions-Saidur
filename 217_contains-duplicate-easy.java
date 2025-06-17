@@ -1,6 +1,7 @@
 import java.io.*;
 import java.util.*;
 
+/*
 class Solution {
     public boolean containsDuplicate(int[] nums) {
         Arrays.sort(nums); 
@@ -12,10 +13,12 @@ class Solution {
         return false;
     }
 }
+*/
 
 
 // Time complexity: O(n)
 // Space complexity: O(n)
+/*
 class Solution {
     public boolean containsDuplicate(int[] nums) {
         // Create a hashset...
@@ -31,5 +34,35 @@ class Solution {
         }
         // Otherwise return false...
         return false;
+    }
+}*/
+
+/*Kotlin*/
+class Solution {
+    fun containsDuplicate(nums: IntArray): Boolean {
+        
+        Arrays.sort(nums)
+        for(i in 0 until nums.size-1) {
+            if(nums[i] == nums[i+1])
+                return true
+        }
+
+        return false
+    }
+}
+
+class Solution {
+    fun containsDuplicate(nums: IntArray): Boolean {
+        
+        val hset = HashSet<Int>()
+
+        for(i in 0 until nums.size) {
+            if (hset.contains(nums[i])) {
+                return true
+            }
+            hset.add(nums[i])
+        }
+
+        return false
     }
 }
